@@ -1,8 +1,14 @@
 [
   {
-    "name": "Some like it hot"
+    "id": 1,
+    "title": "Some like it hot",
+    "description": "When two male musicians witness a mob hit, they flee the state in an all-female band disguised as women, but further complications set in.",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BNzAyOGIxYjAtMGY2NC00ZTgyLWIwMWEtYzY0OWQ4NDFjOTc5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"
   },
   {
-    "name": "Amelie"
+    "id": 2,
+    "title": "Amelie",
+    "description": "Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love.",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDg4NjM1YjMtYmNhZC00MjM0LWFiZmYtNGY1YjA3MzZmODc5XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UX182_CR0,0,182,268_AL_.jpg"
   }
 ]
