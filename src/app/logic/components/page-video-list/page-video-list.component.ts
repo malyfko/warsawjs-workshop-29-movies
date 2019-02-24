@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { MoviesService } from "../../services/movies.service";
+
+import { MoviesService } from '../../services/movies.service';
+import { Movie } from '../../interfaces/Movie.interface';
 
 @Component({
   selector: 'app-page-video-list',
@@ -8,17 +10,19 @@ import { MoviesService } from "../../services/movies.service";
 })
 export class PageVideoListComponent implements OnInit {
 
+  public movies: Movie[] = [];
+
   constructor(
-    private movies: MoviesService
+    private moviesService: MoviesService
   ) { }
 
-  async getMovies() {
-    const response = await this.movies.fetchMovies();
-    console.log(response);
+  async ngOnInit() {
+    this.movies = await this.getMovies();
+    console.log(this.movies);
   }
 
-  ngOnInit() {
-    this.getMovies();
+  getMovies() {
+    return this.moviesService.fetchMovies();
   }
 
 }
