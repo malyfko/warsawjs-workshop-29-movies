@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LogicModule } from './logic/logic.module';
 
 import { AppComponent } from './app.component';
-import { BackgroundColorDirective } from './background-color.directive';
+import { BackgroundColorDirective } from './shared/directives/background-color.directive';
 
 @NgModule({
   declarations: [
