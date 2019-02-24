@@ -2,8 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { SharedModule } from './shared/shared.module';
-
 import { AppRoutingModule } from './app-routing.module';
+import { LogicModule } from './logic/logic.module';
+
 import { AppComponent } from './app.component';
 import { BackgroundColorDirective } from './background-color.directive';
 
@@ -16,6 +17,7 @@ import { BackgroundColorDirective } from './background-color.directive';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
+    LogicModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
