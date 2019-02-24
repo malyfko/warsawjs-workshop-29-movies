@@ -18,7 +18,6 @@ export class PageVideoListComponent implements OnInit {
 
   async ngOnInit() {
     this.movies = await this.getMovies();
-    console.log(this.movies);
   }
 
   getMovies() {
