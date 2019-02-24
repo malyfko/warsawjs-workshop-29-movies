@@ -173,10 +173,6 @@ var AppModule = /** @class */ (function () {
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
                 _shared_shared_module__WEBPACK_IMPORTED_MODULE_3__["SharedModule"],
             ],
-            exports: [
-                _components_page_home_page_home_component__WEBPACK_IMPORTED_MODULE_6__["PageHomeComponent"],
-                _components_page_contact_page_contact_component__WEBPACK_IMPORTED_MODULE_7__["PageContactComponent"],
-            ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
@@ -318,7 +314,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n  <li routerLink=\"/\">Home</li>\n  <li routerLink=\"/contact\">Contact</li>\n  <li routerLink=\"/movies\">Movies</li>\n</ul>\n"
+module.exports = "<ul>\n  <li><a routerLink=\"/\">Home</a></li>\n  <li><a routerLink=\"/contact\">Contact</a></li>\n  <li><a routerLink=\"/movies\">Movies</a></li>\n  <li><a routerLink=\"/movies/profile\">Profile</a></li>\n  <li><a routerLink=\"/movies/not-found\">Not found</a></li>\n</ul>\n"
 
 /***/ }),
 
