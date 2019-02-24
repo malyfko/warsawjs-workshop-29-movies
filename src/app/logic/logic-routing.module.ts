@@ -14,7 +14,7 @@ const routes: Routes = [
     component: PageVideoProfileComponent,
   },
   {
-    path: 'not-found',
+    path: '**',
     component: PageVideoNotFoundComponent,
   },
 ];
