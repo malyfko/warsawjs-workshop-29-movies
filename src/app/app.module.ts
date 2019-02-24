@@ -5,8 +5,8 @@ import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { PageHomeComponent } from "./components/page-home/page-home.component";
-import { PageContactComponent } from "./components/page-contact/page-contact.component";
+import { PageHomeComponent } from './components/page-home/page-home.component';
+import { PageContactComponent } from './components/page-contact/page-contact.component';
 
 import { BackgroundColorDirective } from './shared/directives/background-color.directive';
 
@@ -21,10 +21,6 @@ import { BackgroundColorDirective } from './shared/directives/background-color.d
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-  ],
-  exports: [
-    PageHomeComponent,
-    PageContactComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

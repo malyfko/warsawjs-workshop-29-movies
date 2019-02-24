@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PageVideoListComponent } from "./components/page-video-list/page-video-list.component";
-import { PageVideoProfileComponent } from "./components/page-video-profile/page-video-profile.component";
-import { PageVideoNotFoundComponent } from "./components/page-video-not-found/page-video-not-found.component";
+import { PageVideoListComponent } from './components/page-video-list/page-video-list.component';
+import { PageVideoProfileComponent } from './components/page-video-profile/page-video-profile.component';
+import { PageVideoNotFoundComponent } from './components/page-video-not-found/page-video-not-found.component';
 
 const routes: Routes = [
   {
@@ -10,19 +10,17 @@ const routes: Routes = [
     component: PageVideoListComponent,
   },
   {
-    path: 'video-profile',
+    path: 'profile',
     component: PageVideoProfileComponent,
   },
   {
-    path: 'video-not-found',
+    path: 'not-found',
     component: PageVideoNotFoundComponent,
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    useHash: true,
-  })],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class LogicRoutingModule { }
